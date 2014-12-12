@@ -476,6 +476,16 @@ nnoremap U <C-r>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+"，c 复制至公共剪贴板
+vmap c "+y
+
+"，a 复制所有至公共剪贴板
+nmap a ggVG"+y
+
+"，v 从公共剪贴板粘贴
+imap v "+p
+nmap v "+p
+vmap v "+p
 "==========================================
 " FileType Settings  文件类型设置
 "==========================================
